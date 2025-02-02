@@ -1,15 +1,46 @@
 <!DOCTYPE html>
+<html>
   <head>
     <title>Shen Tennis</title>
     <style>
       * {
-        font-family: 'Comic Sans MS';
+        font-family: 'Helvetica';
+      }
+      nav {
+        background: blue;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        height: 2em;
+      }
+      nav * {
+        display: inline;
+        color: white;
+      }
+      html, body {
+        margin: 0;
+      }
+      main {
+        margin: 2rem 10rem;
+      }
+      a:hover::after {
+        content: '!';
+        position: absolute;
+      }
+      a:hover {
+        text-decoration-style: wavy;
       }
     </style>
   </head>
   <body>
-    <center>
-      <h1>Shen Tennis</h1>
+    <nav>
+      <h3>Shen Tennis</h3>
+      <a href="/schedule">Schedule</a>
+      <a href="/players">Players</a>
+    </nav>
+    <main>
       <fieldset>
         <legend>Top 10 reasons to play tennis</legend>
         <ul>
@@ -17,5 +48,6 @@
           <li>Lorem ipsum dolor sit amet</li>
         </ul>
       </fieldset>
-    </center>
+    </main>
   </body>
+</html>
