@@ -7,13 +7,15 @@
         font-family: 'Helvetica';
       }
       nav {
-        background: blue;
+        position: relative;
+        background: #261;
         font-size: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1em;
         height: 2em;
+        z-index: 1;
       }
       nav * {
         display: inline;
@@ -21,9 +23,12 @@
       }
       html, body {
         margin: 0;
+        height: 100%;
+        background: top center / cover fixed url(background.png);
       }
       main {
-        margin: 2rem 10rem;
+        z-index: -2;
+        padding: 5rem 10rem;
       }
       a:hover::after {
         content: '!';
@@ -32,22 +37,42 @@
       a:hover {
         text-decoration-style: wavy;
       }
+      #racket {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+      }
+      h1 {
+        color: #EE6;
+        text-align: center;
+        font-size: 10rem;
+        margin-bottom: 5em;
+        text-shadow: -.02em -.01em .01em #0002,
+                     -.04em -.02em .01em #0002,
+                     -.06em -.03em .02em #0002,
+                     -.08em -.04em .02em #0002,
+                     -.10em -.05em .03em #0002,
+                     -.12em -.06em .03em #0001,
+                     -.14em -.07em .04em #0001,
+                     -.16em -.08em .04em #0001,
+                     -.18em -.09em .05em #0001,
+                     -.20em -.10em .05em #0001;
+      }
     </style>
   </head>
   <body>
+    <img src="racket.png" id="racket">
     <nav>
       <h3>Shen Tennis</h3>
       <a href="/schedule">Schedule</a>
       <a href="/players">Players</a>
     </nav>
     <main>
-      <fieldset>
-        <legend>Top 10 reasons to play tennis</legend>
-        <ul>
-          <li>It is fun</li>
-          <li>Lorem ipsum dolor sit amet</li>
-        </ul>
-      </fieldset>
+      <h1>↓ Scroll ↓</h1>
+      <h1>Welcome!</h1>
+      <h1>We are Shen Tennis</h1>
+      <h1>Check out our links up top for more!</h1>
     </main>
   </body>
 </html>
