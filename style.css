@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif');
+* {
+  font-family: 'Noto Serif';
+}
+nav {
+  position: relative;
+  background: #261;
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: .5em 1em;
+  z-index: 1;
+  padding: .5em;
+}
+nav * {
+  margin: 0;
+  color: white;
+}
+html, body {
+  text-align: center;
+  margin: 0;
+}
+a:hover::after {
+  content: '!';
+  position: absolute;
+}
+a:hover {
+  text-decoration-style: wavy;
+}
+#hits {
+  display: block;
+  margin-left: 50%;
+  translate: -50%;
+}

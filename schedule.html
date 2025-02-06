@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shen Tennis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .old {
+        opacity: 50%;
+      }
+      calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: min-content;
+        grid-auto-rows: 5em;
+        margin: 2em;
+        text-align: center;
+      }
+      @media (min-width: 50rem) {
+        calendar {
+          gap: .5em;
+        }
+        calendar div {
+          border-radius: .5em;
+        }
+      }
+      @media (max-width: 50rem) {
+        calendar div {
+          border: 1px solid black;
+          font-size: .6rem;
+        }
+      }
+      calendar div {
+        background: #CCC;
+        overflow: hidden;
+      }
+      calendar div h3 {
+        background: #261;
+        color: #FFF;
+      }
+      calendar div * {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="./">Shen Tennis</a>
+      <h3>Schedule</h3>
+      <a href="players.html">Players</a>
+    </nav>
+    <calendar>
+      {
+        "2/6/25": "Cool Event",
+        "2/14/25": "Valentines Day"
+      }
+    </calendar>
+    <img id="hits" src="https://counter6.optistats.ovh/private/freecounterstat.php?c=614x6yytq5u2sz3ask58gcm6yq7h8al6">
+    <script src="elytra.js"></script>
+    <script src="schedule.js"></script>
+  </body>
+</html>
