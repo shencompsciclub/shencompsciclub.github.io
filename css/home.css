@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 section {
     width: 100%;
     min-height: 100vh;
-    background: url(images\background.png);
+    background: url(images\01.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
