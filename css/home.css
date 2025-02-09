@@ -44,9 +44,9 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-    background: rgba(119, 137, 149, .4);
+    background: rgba(17, 112, 59, 0.4);
 }
 
 nav ul li .active {
-    background: rgba(119, 137, 149, .4);
+    background: rgba(17, 112, 59, 0.4);
 }
