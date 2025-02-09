@@ -8,10 +8,7 @@
 section {
     width: 100%;
     min-height: 100vh;
-    background: url(images/01.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: top center / cover fixed url(images/background.png)
 }
 
 nav{
