@@ -8,6 +8,7 @@
 .container {
     display: inline-block;
     cursor: pointer;
+    margin: 50px 50px;
   }
   
   .bar1, .bar2, .bar3 {
