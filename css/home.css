@@ -8,7 +8,6 @@
 section {
     width: 100%;
     min-height: 100vh;
-    background: top center / cover fixed url(images/background.png)
 }
 
 nav{
