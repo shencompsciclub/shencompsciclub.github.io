@@ -1,11 +1,7 @@
-
-function myFunction(x) {
-    x.classList.toggle("change");
-  }
-
   /* Open when someone clicks on the bars  */
-function openNav() {
+function openNav(x) {
   document.getElementById("myNav").style.width = "100%";
+  x.classList.toggle("change");
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
