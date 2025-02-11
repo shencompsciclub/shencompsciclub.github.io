@@ -1,37 +1,64 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
-    <title>Home | Shen Tennis</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale:1.0">
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <script type="text/javascript" src="home.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Shen Tennis | Home</title>
 </head>
 
 <body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">Shen Tennis</a></span>
 
-    <!--Navigation Menu Icon-->
-    <div class="container" onclick="openNav()">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Shen Tennis</a></span>
+                    <i class='bx bx-x sidebarClose'></i>
 
-    <!-- The overlay -->
-    <div id="myNav" class="overlay">
+                </div>
 
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Girls</a></li>
+                    <li><a href="#">Boys</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
 
-        <!-- Overlay content -->
-        <div class="overlay-content">
-            <a href="#">Home</a>
-            <a href="#">Girls</a>
-            <a href="#">Boys</a>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
         </div>
+    </nav>
 
-    </div>
+    <script src="home.js"></script>
 
 </body>
 
