@@ -4,7 +4,7 @@ elytra.component("navigation", {
         <nav>
             <div class="nav-bar">
                 <i class='bx bx-menu sidebarOpen'></i>
-                <span class="logo navLogo"><a href="#">Shen Tennis</a></span>
+                <span class="logo navLogo"><a href="./">Shen Tennis</a></span>
 
                 <div class="menu">
                     <div class="logo-toggle">
@@ -14,9 +14,20 @@ elytra.component("navigation", {
                     </div>
 
                     <ul class="nav-links">
-                        <li><a href="./">Home</a></li>
-                        <li><a href="./girls.html">Girls</a></li>
-                        <li><a href="./boys.html">Boys</a></li>
+                        <li class="dropdown-wrapper">
+                            <span>Girls &#9660;</span>
+                            <ul class="dropdown-list">
+                                <li><a href="varsity-girls.html">Varsity Girls</a></li>
+                                <li><a href="jv-girls.html">JV Girls</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-wrapper">
+                            <span>Boys &#9660;</span>
+                            <ul class="dropdown-list">
+                                <li><a href="varsity-boys.html">Varsity Boys</a></li>
+                                <li><a href="jv-boys.html">JV Boys</a></li>
+                            </ul>
+                        </li>
                         <li><a href="./club.html">Booster Club</a></li>
                         <li><a href="./events.html">Events</a></li>
                         <li><a href="./contact.html">Contact</a></li>
