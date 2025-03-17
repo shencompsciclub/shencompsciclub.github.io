@@ -45,8 +45,11 @@
     text-align: center;
     padding-bottom: 5px;
     translate: -3em;
-    list-style: none;
   }
+
+.dropdown-list li {
+  list-style: none;
+}
 
   .dropdown-wrapper {
     position: relative;
