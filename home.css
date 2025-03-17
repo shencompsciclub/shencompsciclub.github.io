@@ -53,6 +53,7 @@
 
   .dropdown-wrapper {
     position: relative;
+    list-style: none;
   }
 
   .dropdown-wrapper:hover .dropdown-list {
