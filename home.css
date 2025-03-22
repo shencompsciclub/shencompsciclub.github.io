@@ -14,6 +14,7 @@
     --nav-color: #11713c;
     --side-nav: #010718;
     --text-color: #FFF;
+    --text-complement: #000;
     --search-bar: #F2F2F2;
     --search-text: #010718;
   }
@@ -27,6 +28,7 @@
     background-color: var(--body-color);
     background-image: url(../images/bg.svg);
     background-size: cover;
+    color: var(--text-complement);
   }
 
   body.dark {
@@ -34,6 +36,7 @@
     --nav-color: #242526;
     --side-nav: #242526;
     --text-color: #CCC;
+    --text-complement: #CCC;
     --search-bar: #242526;
   }
 
@@ -44,7 +47,9 @@
     width: 9em;
     text-align: center;
     padding-bottom: 5px;
-    translate: -3em;
+    top: 2em;
+    padding-top: 1em;
+    border-radius: .5em;
   }
 
 .dropdown-list li {
@@ -277,15 +282,25 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, max(-50%, -50vh + 70px));
     padding: 10px 20px;
     text-align: center;
+    width: 100%;
   }
 
   @media (max-width: 800px) {
 
     nav .nav-bar .sidebarOpen {
       display: block;
+    }
+
+    .dropdown-list {
+      top: -1em;
+      left: 4em;
+      width: 15em;
+      padding-top: 0em;
+      padding-left: 6em;
+      background-color: var(--side-nav);
     }
 
     .menu {
@@ -394,4 +409,29 @@ calendar div h3 {
 }
 calendar div * {
   margin: 0;
+}
+value {
+  width: 400px;
+  text-align: center;
+  background: var(--nav-color);
+  color: var(--text-color);
+  border-radius: .5em;
+  padding: 25px;
+}
+value img {
+  height: 80px;
+  padding: .5em;
+}
+.dark value img {
+  filter: invert();
+}
+value div {
+  clip-path: path("M 0 40 Q 0 30 10 30 L 70 30 C 100 30 100 0 130 0 L 220 0 C 250 0 250 30 280 30 L 340 30 Q 350 30 350 40 Q 350 50 340 50 L 280 50 C 250 50 250 80 220 80 L 130 80 C 100 80 100 50 70 50 L 10 50 Q 0 50 0 40");
+  background-color: var(--body-color);
+}
+#values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
 }
